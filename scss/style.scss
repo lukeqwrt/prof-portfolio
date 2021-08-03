@@ -5,6 +5,8 @@
 // font-family: 'Raleway', sans-serif;
 
 .main{
+    display: grid;
+    grid-auto-rows: auto;
     .nav-container{
         position: fixed;
         top: 0;
@@ -70,6 +72,7 @@
                         opacity: 1;
                     }
                     a{
+                        cursor: pointer;
                         font-family: 'Raleway', sans-serif;
                         color: black;
                         text-decoration: none;
@@ -214,8 +217,10 @@
     //     }
     // }
     .about{
+
         .about-title-wrapper{
             margin-top: 50px;
+            margin-bottom: 40px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -460,12 +465,11 @@
     .projects{
          background: rgb(241, 241, 241);
       //   background: #292d36;
-        padding-bottom: 200px;
+         padding-bottom: 200px;
         @media screen and (max-width: 900px) {
             padding-bottom: 100px;
         }
         .project-title{
-            margin-top: 50px;
             margin-bottom: 40px;
             display: flex;
             flex-direction: column;

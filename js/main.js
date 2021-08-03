@@ -63,3 +63,13 @@ function animate() {
       element.classList.add('animate');
   }
 }
+
+
+function goToSecton(section){
+  let el = document.getElementById(section);
+  let elTop = el.offsetTop - 55;
+  window.scroll({
+      top: elTop,
+      behavior: "smooth"
+  })
+}
