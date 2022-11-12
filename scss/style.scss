@@ -615,8 +615,8 @@ html{
             position: relative;
             .child {
                 border-top: 80px solid rgb(241, 241, 241);
-                border-left: 49vw solid transparent;
-                border-right: 49vw solid transparent;
+                border-left: 47vw solid transparent;
+                border-right: 47vw solid transparent;
                 width: 0;
                 height: 0;
                 bottom: -80px;
@@ -627,8 +627,8 @@ html{
                 left: 0;
                 right: 0;
                 margin: auto;
-              }
         }
+    }
         .contact-title{
             margin-bottom: 40px;
             display: flex;
