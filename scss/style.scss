@@ -329,6 +329,7 @@ html{
                 margin-bottom: 40px;
                 .about-me-img{
                     img{
+                        border-radius: 5px;
                         height: auto;
                         width: 230px;
                         @media screen and (min-width: 600px) {
