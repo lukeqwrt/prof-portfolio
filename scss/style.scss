@@ -1,9 +1,11 @@
 *{
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 // font-family: 'Raleway', sans-serif;
-html{
+html,body{
+    scroll-behavior: smooth;
 }
 .main{
     display: grid;
@@ -329,11 +331,12 @@ html{
                 margin-bottom: 40px;
                 .about-me-img{
                     img{
-                        border-radius: 100%;
+                        border-radius: 400px;
                         height: auto;
                         width: 230px;
                         @media screen and (min-width: 600px) {
                             width: 270px;
+                            height: auto;
                         }
                     }
                 }
@@ -368,103 +371,21 @@ html{
             }
             .skills{
                 margin: 20px 15px;
-                display: grid;
-                row-gap: 10px;
-                @media screen and (min-width: 600px) {
-                    row-gap: 13px;
-                    margin: 0px 0px;
-                }
-                @media screen and (min-width: 960px) {
-                    margin: 0px 0px;
-                    row-gap: 20px;
-                    grid-template-rows: 30px 30px 30px 30px 30px 30px 30px;
-                    max-width: 550px;
-                }
-                .progress{
-                    display: grid;
-                    grid-auto-flow: column;
-                    grid-template-columns: auto 1fr;
-                    grid-template-rows: 1fr;
-                    position: relative;
-                
-                    p{
-                        @media screen and (min-width: 600px) {
-                            padding: 8px 10px;
-                        }
-                        @media screen and (min-width: 960px) {
-                            width: 150px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            padding: 0;
-                        }
-                        padding: 4px 10px;
-                        font-size: 13px;
-                        font-family: 'Raleway', sans-serif;
-                        // background:rgb(56, 69, 95);
-                        background: rgb(80, 112, 175);
-                        color: #fff;
-                        z-index: 3;
+      
+                .skill{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    align-items: center;
+                    gap: 20px;
+                    row-gap: 30px;
+                    img{
+                        height: 60px;
+                        width: 70px;
                     }
-                    .bottle{
-                        background: rgb(172, 172, 172);
-                   
-                        .fill{
-                         
-                            position: absolute;
-                            left: 0;
-                            top: 0;
-                            bottom: 0;
-                            height: 100%;
-                            display: flex;
-                            justify-content: flex-start;
-                            align-items: center;
-           
-                    
-                            .animating{
-                                width: 0%;
-                                display: block;
-                                background: rgb(36, 46, 66);
-                                height: 100%;
-                                position: relative;
-                                span{
-                                    position: absolute;
-                                    right: 0px;
-                                    top: 50%;
-                                    transform: translate(0, -50%);
-                                    font-size: 13px;
-                                    font-family: 'Raleway', sans-serif;
-                                    color: white;
-                                    padding-right: 5px;
-                                    
-                                }
-                            }
-                        }
-
-                        #fill-html{
-                            width: 99%;
-                
-                        }
-                        #fill-css{
-                            width: 90%;
-                        }
-                        #fill-js{
-                            width: 82%;
-                        }
-                        #fill-bs{
-                            width: 86%;
-                        }
-                        #fill-figma{
-                            width: 80%;
-                        }
-                        #fill-php{
-                            width: 89%;
-                        }
-                        #fill-asp{
-                            width:79%;
-                        }
-           
-               
+                    img.html{
+                        height: 62px;
+                        width:62px;
                     }
                 }
             }

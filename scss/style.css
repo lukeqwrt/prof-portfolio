@@ -1,6 +1,11 @@
 * {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  scroll-behavior: smooth;
 }
 
 .main {
@@ -282,13 +287,14 @@
   margin-bottom: 40px;
 }
 .main .about .me-wrapper .about-me .about-me-img img {
-  border-radius: 100%;
+  border-radius: 400px;
   height: auto;
   width: 230px;
 }
 @media screen and (min-width: 600px) {
   .main .about .me-wrapper .about-me .about-me-img img {
     width: 270px;
+    height: auto;
   }
 }
 .main .about .me-wrapper .about-me h2 {
@@ -325,102 +331,22 @@
 }
 .main .about .me-wrapper .skills {
   margin: 20px 15px;
-  display: grid;
-  row-gap: 10px;
 }
-@media screen and (min-width: 600px) {
-  .main .about .me-wrapper .skills {
-    row-gap: 13px;
-    margin: 0px 0px;
-  }
-}
-@media screen and (min-width: 960px) {
-  .main .about .me-wrapper .skills {
-    margin: 0px 0px;
-    row-gap: 20px;
-    grid-template-rows: 30px 30px 30px 30px 30px 30px 30px;
-    max-width: 550px;
-  }
-}
-.main .about .me-wrapper .skills .progress {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 1fr;
-  position: relative;
-}
-.main .about .me-wrapper .skills .progress p {
-  padding: 4px 10px;
-  font-size: 13px;
-  font-family: "Raleway", sans-serif;
-  background: rgb(80, 112, 175);
-  color: #fff;
-  z-index: 3;
-}
-@media screen and (min-width: 600px) {
-  .main .about .me-wrapper .skills .progress p {
-    padding: 8px 10px;
-  }
-}
-@media screen and (min-width: 960px) {
-  .main .about .me-wrapper .skills .progress p {
-    width: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-  }
-}
-.main .about .me-wrapper .skills .progress .bottle {
-  background: rgb(172, 172, 172);
-}
-.main .about .me-wrapper .skills .progress .bottle .fill {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  height: 100%;
+.main .about .me-wrapper .skills .skill {
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
+  gap: 20px;
+  row-gap: 30px;
 }
-.main .about .me-wrapper .skills .progress .bottle .fill .animating {
-  width: 0%;
-  display: block;
-  background: rgb(36, 46, 66);
-  height: 100%;
-  position: relative;
+.main .about .me-wrapper .skills .skill img {
+  height: 60px;
+  width: 70px;
 }
-.main .about .me-wrapper .skills .progress .bottle .fill .animating span {
-  position: absolute;
-  right: 0px;
-  top: 50%;
-  transform: translate(0, -50%);
-  font-size: 13px;
-  font-family: "Raleway", sans-serif;
-  color: white;
-  padding-right: 5px;
-}
-.main .about .me-wrapper .skills .progress .bottle #fill-html {
-  width: 99%;
-}
-.main .about .me-wrapper .skills .progress .bottle #fill-css {
-  width: 90%;
-}
-.main .about .me-wrapper .skills .progress .bottle #fill-js {
-  width: 82%;
-}
-.main .about .me-wrapper .skills .progress .bottle #fill-bs {
-  width: 86%;
-}
-.main .about .me-wrapper .skills .progress .bottle #fill-figma {
-  width: 80%;
-}
-.main .about .me-wrapper .skills .progress .bottle #fill-php {
-  width: 89%;
-}
-.main .about .me-wrapper .skills .progress .bottle #fill-asp {
-  width: 79%;
+.main .about .me-wrapper .skills .skill img.html {
+  height: 62px;
+  width: 62px;
 }
 .main .projects {
   background: rgb(241, 241, 241);
